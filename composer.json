@@ -1,0 +1,26 @@
+{
+    "name": "libern/timezone",
+    "description": "Laravel Timezone Helpers",
+    "homepage": "https://github.com/libern/timezone",
+    "keybords": ["timezone", "timezones"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Libern Lin",
+            "email": "libernlin@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": ">=4.2"
+    },
+    "autoload": {
+        "classmap": [
+            "src/migrations"
+        ],
+        "psr-0": {
+            "Libern\\Timezone\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
