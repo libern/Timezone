@@ -152,7 +152,7 @@ class Timezone
         '(UTC+13:00) Nuku\'alofa' => 'Pacific/Tongatapu'
     );
 
-    public static function timezone()
+    public static function Timezone()
     {
         return new Timezone();
     }
