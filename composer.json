@@ -22,5 +22,15 @@
             "Libern\\Timezone\\": "src/"
         }
     },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Libern\\Timezone\\TimezoneServiceProvider"
+            ]
+        }
+    },
     "minimum-stability": "stable"
 }
