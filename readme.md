@@ -1,4 +1,4 @@
-# Timezone data/options
+# Laravel Timezone list data/options
 
 This is a helper function that creates a select menu including timezones in human-readable format. Each underlying key is the php-friendly name for the timezone, making it easy to immediately store and use them. The array of timezones and their underlying keys were taken from the repository by [tamaspap](https://github.com/tamaspap/timezones).
 
