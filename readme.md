@@ -1,4 +1,4 @@
-# Timezone Select Form Builder
+# Timezone data/options
 
 This is a helper function that creates a select menu including timezones in human-readable format. Each underlying key is the php-friendly name for the timezone, making it easy to immediately store and use them. The array of timezones and their underlying keys were taken from the repository by [tamaspap](https://github.com/tamaspap/timezones).
 
@@ -23,6 +23,17 @@ Now it's ready for use!
 ## Usage
 
 ### Timezone Convert Helper Functions
+
+
+#### Timezone List
+
+Simply get timezone array list:
+
+```
+$data = Timezone::getTimezoneInfoList();
+```
+
+#### Helpers
 
 The package includes two helper functions that make it easy to deal with displaying and storing timezones, `convertFromUTC()` and `convertToUTC()`:
 
