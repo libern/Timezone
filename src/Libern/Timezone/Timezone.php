@@ -210,19 +210,19 @@ class Timezone
         return $date->format($format);
     }
 
-    public function getTimezoneList()
+    public static function getTimezoneList()
     {
         $timezoneListNameIndexed = self::getTimezoneListNameIndexed();
         return array_flip($timezoneListNameIndexed);
     }
 
-    public function getTimezoneListNameIndexed()
+    public static function getTimezoneListNameIndexed()
     {
         $timezone = new Timezone();
         return $timezone->timezoneList;
     }
 
-    public function getTimezoneName($timezone)
+    public static function getTimezoneName($timezone)
     {
         $timezoneList = self::getTimezoneList();
         if (!empty($timezoneList[$timezone])) {
@@ -230,6 +230,19 @@ class Timezone
         } else {
             return null;
         }
+    }
+
+    public static function getTimezoneInfoList()
+    {
+        $timezoneList = self::getTimezoneList();
+        $data = collect();
+        foreach ($timezoneList as $timezone => $timezone_name) {
+            $data->push([
+                'timezone' => $timezone,
+                'display_name' => $timezone_name,
+            ]);
+        }
+        return $data->toArray();
     }
 
 }
